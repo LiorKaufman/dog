@@ -1,0 +1,23 @@
+[package]
+name = "dog"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lior Kaufman liorka1990@gmail.com"]
+license = "MIT OR Apache-2.0"
+description = "A tool to read files and outputs the contents to the console. This is a re implementation of the popular cat cli tool using rust."
+readme = "README.md"
+repository = "https://github.com/dog/dog.git"
+keywords = ["cli","hobby","demo"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33"
+encoding_rs = "0.8.32"
+encoding_rs_io = "0.1.7"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "2"
+rand = "0.8"
