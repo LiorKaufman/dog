@@ -93,19 +93,19 @@ fn get_invalid_file_to_string(file: &str) -> String {
     let file = File::open(file).unwrap();
     let mut reader = BufReader::new(file);
     let mut buf = vec![];
-    let mut strBuffer = String::new();
+    let mut str_buffer = String::new();
 
     while let Ok(_) = reader.read_until(b'\n', &mut buf) {
         if buf.is_empty() {
             break;
         }
         let line = String::from_utf8_lossy(&buf);
-        strBuffer.push_str(&line);
+        str_buffer.push_str(&line);
 
         println!("{}", line);
         buf.clear();
     }
-    strBuffer
+    str_buffer
 }
 // --------------------------------------------------
 fn run_stdin_no_utf8(input_file: &str, args: &[&str], expected_file: &str) -> TestResult {
