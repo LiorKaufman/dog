@@ -6,7 +6,7 @@ authors = ["Lior Kaufman liorka1990@gmail.com"]
 license = "MIT OR Apache-2.0"
 description = "A tool to read files and outputs the contents to the console. This is a re implementation of the popular cat cli tool using rust."
 readme = "README.md"
-repository = "https://github.com/dog/dog.git"
+repository = "https://github.com/LiorKaufman/dog"
 keywords = ["cli","hobby","demo"]
 categories = ["command-line-utilities"]
 
